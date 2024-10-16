@@ -1,17 +1,52 @@
 papers:
+  - title: "Latent Action Pretraining from Videos"
+    year: "2024"
+    authors: "Seonghyeon Ye*, <b><u>Joel Jang*</u></b>, Byeongguk Jeon, Sejune Joo, Jianwei Yang, Baolin Peng, Ajay Mandlekar, Reuben Tan, Yu-Wei Chao, Bill Yuchen Lin, Lars Liden, Kimin Lee, Jianfeng Gao, Luke Zettlemoyer, Dieter Fox, Minjoon Seo"
+    venue: "Preprint"
+    paper_pdf: "https://arxiv.org/abs/2410.11758"
+    code: "https://github.com/LatentActionPretraining/LAPA"
+    selected: y
+    
+  - title: "Semiparametric Token-Sequence Co-Supervision"
+    authors: "Hyunji Lee*, Doyoung Kim*, Jihoon Jun, Sejune Joo, <b><u>Joel Jang</u></b>, Kyoung-Woon Oh, Minjoon Seo"
+    venue: "ICLR 2024"
+    paper_pdf: "https://arxiv.org/abs/2310.08491"
+    code: "https://github.com/kaistAI/Prometheus"
+    twitter: "https://x.com/seungonekim/status/1713587475229401493?s=20"
+    selected: y
+    
+  - title: "LangBridge: Multilingual Reasoning Without Multilingual Supervision"
+    authors: "Dongkeun Yoon, <b><u>Joel Jang</u></b>, Sungdong Kim, Seungone Kim, Sheikh Shafayat, Minjoon Seo"
+    venue: "ACL 2024"
+    paper_pdf: "https://arxiv.org/abs/2401.10695"
+    code: "https://github.com/kaistAI/LangBridge"
+    selected: y
+    
+  - title: "Exploring the Practicality of Generative Retrieval on Dynamic Corpora"
+    authors: "Chaeeun Kim*, Soyoung Yoon*, Hyunji Lee, <b><u>Joel Jang</u></b>, Sohee Yang, Minjoon Seo"
+    venue: "EMNLP 2024"
+    paper_pdf: "https://arxiv.org/abs/2305.18952"
+    selected: y
+    
+  - title: "How Well Do Large Language Models Truly Ground?"
+    authors: "Hyunji Lee*, Sejune Joo*, Chaeeun Kim, <b><u>Joel Jang</u></b>, Doyoung Kim, Kyoung-Woon Oh, Minjoon Seo"
+    venue: "NAACL 2024"
+    paper_pdf: "https://arxiv.org/abs/2310.08491"
+    code: "https://github.com/kaistAI/How-Well-Do-LLMs-Truly-Ground"
+    selected: y
+
   - title: "Personalized Soups: Personalized Large Language Model Alignment via Post-hoc Parameter Merging"
     authors: "<b><u>Joel Jang</u></b>, Seungone Kim, Bill Yuchen Lin, Yizhong Wang, Jack Hessel, Luke Zettlemoyer, Hannaneh Hajishirzi, Yejin Choi, Prithviraj Ammanabrolu"
-    venue: "Preprint"
+    venue: "NeurIPS 2024 AFM Workshop"
     paper_pdf: "https://arxiv.org/abs/2310.11564"
     code: "https://github.com/joeljang/RLPHF"
     twitter: "https://x.com/jang_yoel/status/1715094750167265458?s=20"
     selected: y
     
   - title: "Prometheus: Inducing Fine-grained Evaluation Capability in Language Models"
-    year: "2024"
     authors: "Seungone Kim*, Jamin Shin*, Yejin Cho*, <b><u>Joel Jang</u></b>, Shayne Longpre, Hwaran Lee, Sangdoo Yun, Seongjin Shin, Sungdong Kim, James Thorne, Minjoon Seo"
     venue: "ICLR 2024"
-    paper_pdf: "https://arxiv.org/abs/2310.08491"
+    paper_pdf: "https://arxiv.org/abs/2311.09069"
     code: "https://github.com/kaistAI/Prometheus"
     twitter: "https://x.com/seungonekim/status/1713587475229401493?s=20"
     selected: y
