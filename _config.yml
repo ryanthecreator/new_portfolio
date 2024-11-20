@@ -1,6 +1,12 @@
+url: "https://rpunamiya.dev"
+baseurl: ""
+
+
 source:      .
 destination: ./_site
 includes:    ./_includes
+
+
 
 collections:
   projects:
