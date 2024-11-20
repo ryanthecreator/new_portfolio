@@ -8,5 +8,6 @@ projects:
   - title: RoadSense - Embedded system for passive pothole detection in cars
     subtitle: Winner of Georgia Tech Grand Challenges Grant ($700)
     thumbnail: "/assets/projects/roadsense.png"
+    url: "https://drive.google.com/file/d/10pAd7HwyCvQT02KY6CdsVLNT8RXnmRW3/view?usp=sharing"
     selected: y
 
