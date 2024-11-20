@@ -1,0 +1,68 @@
+/* Font Sizes */
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  h5 {
+    font-size: 1.75em;
+  }
+  
+  p {
+    font-size: 1em;
+  }
+  
+  a {
+    color: #5D3FD3;
+    text-decoration: none;
+    font-weight: bold; /* Makes all links bold */
+  }
+  
+  a:hover {
+    color: white; /* Text becomes white on hover */
+    background-color: #5D3FD3; /* Purple highlight on hover */
+    padding: 2px 4px; /* Optional: Adds padding for better visibility */
+    border-radius: 4px; /* Optional: Smoothens edges of the highlight */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  }
+
+  /* Navbar Styles */
+  .navbar-link {
+    position: relative;
+    display: inline-block;
+    color: #000;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-link:hover {
+    color: #5D3FD3;
+  }
+  
+  .navbar-link::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #5D3FD3;
+    left: 50%;
+    bottom: -5px;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-link:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  
+  /* Publications Images */
+  .figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  

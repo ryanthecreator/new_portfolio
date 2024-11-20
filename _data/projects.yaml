@@ -1,6 +1,12 @@
 projects:
-  - title: 
-    subtitle: 
-    thumbnail: 
-    url: 
+  - title: Partnr - Intelligent co-pilot for consultants
+    subtitle: Overall winner of AI ATL 2023 Hackathon
+    thumbnail: "/assets/projects/partnr.png"
+    url: "https://devpost.com/software/partnr-consulting-copilot"
     selected: y
+
+  - title: RoadSense - Embedded system for passive pothole detection in cars
+    subtitle: Winner of Georgia Tech Grand Challenges Grant ($700)
+    thumbnail: "/assets/projects/roadsense.png"
+    selected: y
+

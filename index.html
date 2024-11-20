@@ -1,270 +1,190 @@
 ---
 layout: default
 ---
+<!-- Include CSS for styling -->
+<link rel="stylesheet" href="/index.css">
+
+<!-- Navbar -->
+<div class="navbar-spacer"></div>
+<nav class="navbar">
+  <div class="container">
+    <ul class="navbar-list">
+      <li class="navbar-item"><span class="navbar-link" onclick="location.href='#about';">About</span></li>
+      <li class="navbar-item"><span class="navbar-link" onclick="location.href='#education';">Education</span></li>
+      <li class="navbar-item"><span class="navbar-link" onclick="location.href='#publications';">Publications</span></li>
+      <li class="navbar-item"><span class="navbar-link" onclick="location.href='#projects';">Projects</span></li>
+      <li class="navbar-item"><span class="navbar-link" onclick="location.href='#resume';">Vitæ</span></li>
+    </ul>
+  </div>
+</nav>
+
 <!-- ========== About ========== -->
 <div class="docs-section" id="about">
-  <h5>About</h5>
-  Hello! I am a second-year Ph.D. Student at the <a href="https://www.cs.washington.edu/">Allen School</a> at the <a href="https://www.washington.edu/">University of Washington</a>, co-advised by <a href="https://www.cs.washington.edu/people/faculty/lsz">Luke Zettlemoyer</a> and <a href="https://homes.cs.washington.edu/~fox/">Dieter Fox</a>. I am currently a research intern at <a href="https://research.nvidia.com/labs/srl/">Nvidia GEAR Lab</a> working with <a href="https://scholar.google.com/citations?user=jEANvfgAAAAJ&hl=ko">Scott Reed</a> and <a href="https://jimfan.me/">Jim Fan</a>. I was previously a research intern at <a href="https://research.nvidia.com/labs/srl/">Nvidia Robotics Lab</a> and <a href="https://allenai.org/">Ai2</a>. I am currently interested in scaling for robotics; Specifically, I am focused on developing scalable methods for creating foundation models for generalist robots. I obtained an M.S. in Artificial Intelligence at KAIST AI, where I was fortunate to be advised by <a href="https://seominjoon.github.io/">Minjoon Seo</a>. Before that, I obtained a B.S. in Computer Science at Korea University. 
+  <h4>About</h4>
+  Hi I'm Ryan! I'm a third-year B.S. CS major in the <a href="https://www.gatech.edu/">Georgia Tech</a>, advised by <a href="https://faculty.cc.gatech.edu/~danfei/">Danfei Xu</a>. 
+  I am also fortunate to be mentored by <a href="https://simarkareer.com/">Simar Kareer</a>, PhD at Georgia Tech.
+  I am currently interested in data-centric and end-to-end approaches in robotics (cliché); 
+  Specifically, I am focused on learning from embodied human data and developing new foundation models for generalist robot learning.  
 </div>
+
+
 
 <!-- ========== News ========== -->
 <div class="docs-section">
-  <h5>News</h5>
+  <h4>News</h4>
   <div class="col-12 col-md-12 text-md-left no-padding">
-    <b class="bbold" style="color:#fa8072;">Oct 2024</b>&nbsp;&nbsp;&nbsp;&nbsp;
-    Invited to give a talk at OpenAI for our new preprint, <a href="https://latentactionpretraining.github.io/">Latent Action Pretraining from Videos</a>.
+    <span style="color:#fa8072;;">Oct 2024</span>&nbsp;&nbsp;&nbsp;&nbsp;
+    Our paper, <a href="https://egomimic.github.io/">EgoMimic</a> was showcased at the <a href="https://dex-manipulation.github.io/corl2024/">LFDM</a> and 
+    <a href="https://sites.google.com/view/xembodimentworkshop">X-Embodiment</a> Workshops at <a href="https://www.corl.org/">CoRL</a> 2024.
   </div>
   <div class="col-12 col-md-12 text-md-left no-padding">
-    <b class="bbold" style="color:#fa8072;">June 2024</b>&nbsp;&nbsp;&nbsp;&nbsp;
-    I am part of the organizing committee for the <a href="https://embodied-ai.org/">5th Embodied AI Workshop</a> at CVPR 2024.
-  </div>
-  <div class="col-12 col-md-12 text-md-left no-padding">
-    <b class="bbold" style="color:#fa8072;">January 2024</b>&nbsp;&nbsp;&nbsp;&nbsp;
-    Our <a href="https://arxiv.org/abs/2310.08491">Prometheus</a> paper has been accepted to <b>ICLR 2024</b>! 
-  </div>
-  <div class="col-12 col-md-12 text-md-left no-padding">
-    <b class="bbold" style="color:#fa8072;">Octobober 2023</b>&nbsp;&nbsp;&nbsp;&nbsp;
-    Our <a href="https://arxiv.org/abs/2305.14045">CoT Collection</a> paper has been accepted to <b>EMNLP 2023</b> and <a href="https://arxiv.org/abs/2210.03029">RoSPr</a> to <b>EMNLP 2023 Findings</b>!
-  </div>
-  <div class="col-12 col-md-12 text-md-left no-padding">
-    <b class="bbold" style="color:#fa8072;">May 2023</b>&nbsp;&nbsp;&nbsp;&nbsp;
-    Our <a href="https://aclanthology.org/2023.acl-long.805/">Knowledge Unlearning</a> paper and <a href="https://aclanthology.org/2023.acl-short.74/">Gradient Ascent Post-training</a> paper has been accepted to <b>ACL 2023</b> and <a href="https://arxiv.org/abs/2206.11349">Prompt Injection</a> to <b>ACL 2023 Findings</b>!
-  </div>
-  <div class="col-12 col-md-12 text-md-left no-padding">
-    <b class="bbold" style="color:#fa8072;">April 2023</b>&nbsp;&nbsp;&nbsp;&nbsp;
-    Our <a href="https://arxiv.org/abs/2302.03202">ELM</a> paper has been accepted to <b>ICML 2023</b>!
-  </div>
-  <div class="col-12 col-md-12 text-md-left no-padding">
-    <b class="bbold" style="color:#fa8072;">January 2023</b>&nbsp;&nbsp;&nbsp;&nbsp;
-    Our <a href="https://arxiv.org/abs/2210.02969">Guess the Instruction</a> paper has been accepted to <b>ICLR 2023</b>! 
-  </div>
-  <div class="col-12 col-md-12 text-md-left no-padding">
-    <b class="bbold" style="color:#fa8072;">November 2022</b>&nbsp;&nbsp;&nbsp;&nbsp;
-    Our <a href="https://openreview.net/forum?id=vfsRB5MImo9">CKL</a> paper won the <a href="https://www.qualcomm.com/research/university-relations/innovation-fellowship/2022-south-korea">Qualcomm Innovation Fellowship Korea (QIFK) 2022</a>!
-  </div>
-  <div class="col-12 col-md-12 text-md-left no-padding">
-    <b class="bbold" style="color:#fa8072;">October 2022</b>&nbsp;&nbsp;&nbsp;&nbsp;
-    Our <a href="https://arxiv.org/abs/2204.14211">TemporalWiki</a> paper has been accepted to <b>EMNLP 2022</b>! 
-  </div>
-  <div class="row no-gutters">
-    <div class="col-12 col-md-12 text-md-left">
-      <b class="bbold" style="color:#fa8072;">Jan 2022</b>&nbsp;&nbsp;&nbsp;&nbsp;
-      Our <a href="https://openreview.net/forum?id=vfsRB5MImo9">CKL</a> paper got accepted to <b>ICLR 2022</b>!
-    </div>
+    <span style="color:#fa8072;;">Sep 2024</span>&nbsp;&nbsp;&nbsp;&nbsp;
+    Recieved the <a href="https://undergradresearch.gatech.edu/content/presidents-undergraduate-research-awards">President's Undergraduate Research Award</a> for my research in robotics.
   </div>
 </div>
 <p></p>
 
 
-<!-- ========== Education ========== -->
+<!-- ========== Experiences ========== -->
 <div class="docs-section" id="education">
-  <h5>Education</h5>
-        <div class="paper">
-          <p class="title"><b>University of Washington<b style="float:right;">Sep. 2023 - Present</b></b></p>
-          
-          <p>Ph.D. Student (advisors: <a href="https://www.cs.washington.edu/people/faculty/lsz">Luke Zettlemoyer</a> and <a href="https://homes.cs.washington.edu/~fox/">Dieter Fox</a>)</p>
-          <p></p>
-        </div>
-        <div class="paper">
-          <p class="title"><b>Korea Advanced Institute of Science and Technology (KAIST) <b style="float:right;">Mar. 2021 - Aug. 2023</b></b></p>
-          
-          <p>M.S. in Artificial Intelligence (advisor: <a href="https://seominjoon.github.io/">Minjoon Seo</a>)</p>
-          <p></p>
-        </div>
-      
-        <div class="paper">
-          <p class="title"><b>Korea University<b style="float:right;">Mar. 2017 - Feb. 2021</b></b></p>
-          
-          <p>B.S. in Computer Science
-          <p></p>
-        </div>
-</div>
-
-<!-- ========== PUBLICATIONS ========== -->
-<div class="docs-section" id="publications">
-  <h5>Publications</h5>
-
-  <!-- <p>Most recent publications on <a href="{{ site.data.main_info.google_scholar }}" target="_blank">Google Scholar</a>.<br/> -->
-  </p>
-
-  <!-- <ul class="tab-nav">
-    <li><div class="button active" data-ref="#papers-selected">Selected</div></li>
-    <li><div class="button" data-ref="#papers-all">All</div></li>
-  </ul> -->
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="papers-selected">
-      {% assign selected_papers = site.data.publications.papers | where: "selected", "y" %}
-      {% for paper in selected_papers %}
-        <div class="paper">
-          <div class="row">
-            <!--
-            <div class="four columns">
+  <h4 style="margin-bottom: 40px;">Education</h4>
+        <div class="paper" style="margin-bottom: 40px;">
+          <div class="row" style="margin: inherit;">
+            <div class="three columns">
               <div class="figure">
-                <img src="{{ paper.image }}" width="100%">
+                <img src="/assets/GT_logo.png" width="100%" style="display: block; margin: auto; padding-top: 3%; padding-bottom: 5%; max-width: 200px;">
               </div>
             </div>
-            -->
-            <div class="twelve columns">
-              {% if paper.year %}
-                <p><h5>{{ paper.year }}</h5><hr /></p>
-              {% endif %}
-              <p class="title"><b>{{ paper.title }}</b></p>
-              <p>{{ paper.authors }}</p>
-              <p><i>{{ paper.venue }}</i></p>
-              <div class="paper-buttons">
-                {% if paper.paper_pdf %}
-                  <a class="button" href="{{ paper.paper_pdf }}" target="_blank">Paper</a>
-                {% endif %}
-
-                {% if paper.poster %}
-                  <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
-                {% endif %}
-
-                {% if paper.video %}
-                  <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-                {% endif %}
-
-                {% if paper.code %}
-                  <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-                {% endif %}
-                
-                {% if paper.slides %}
-                  <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
-                {% endif %}
-                
-                {% if paper.twitter %}
-                  <a class="button" href="{{ paper.twitter }}" target="_blank">Twitter</a>
-                {% endif %}
-              </div>
-            </div>
-          </div>       
-        </div>
-      {% endfor %}
-      <h6><b><i>( * indicates equal contribution )</i></b></h6>
-    </div>
-    
-    <!-- <div class="tab-pane" id="papers-all">
-      {% for paper in site.data.publications.papers %}
-        <div class="paper">
-          <div class="row">
-            <div class="four columns">
-              <div class="figure">
-                <img src="{{ paper.image }}" width="100%">
-              </div>
-            </div>
-            <div class="twelve columns">
-              <p class="title"><b>{{ paper.title }}</b></p>
-              <p>{{ paper.authors }}</p>
-              <p><i>{{ paper.venue }}</i></p>
-              <div class="paper-buttons">
-                {% if paper.paper_pdf %}
-                  <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
-                {% endif %}
-                {% if paper.poster %}
-                  <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
-                {% endif %}
-                {% if paper.video %}
-                  <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-                {% endif %}
-                {% if paper.code %}
-                  <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-                {% endif %}
-                
-                {% if paper.slides %}
-                  <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
-                {% endif %}
-                {% if paper.twitter %}
-                  <a class="button" href="{{ paper.twitter }}" target="_blank">Twitter</a>
-                {% endif %}
-              </div>
+            <div class="nine columns">
+              <p class="title"><b>Georgia Institute of Technology <b style="color:#fa8072; float:right;"><i>Atlanta, GA, USA</i></b></b></p>
+              
+              <p>B.S in Computer Science <b style="color:#fa8072; float:right;">Aug. 2022 - Present</b></p>
+              <p>GPA: 4.0/4.0</p>
+              <p>Advisor: Danfei Xu</p>
+              <p></p>
             </div>
           </div>
         </div>
-    {% endfor %}
-    </div> -->
-    
 </div>
 
-<!-- ========== PROJECTS ========== -->
-<!-- <div class="docs-section" id="projects">
+<!-- ========== Publications ========== -->
+<div class="docs-section" id="publications">
+  <h4>Publications</h4>
+  <h6><i>( * indicates equal contribution )</i></h6>
+  <!-- Publications Loop -->
+  <div class="publications">
+    {% assign selected_papers = site.data.publications.papers | where: "selected", "y" %}
+    {% assign sorted_papers = selected_papers | sort: "year" | reverse %}
+    {% assign current_year = "" %}
+    {% for paper in sorted_papers %}
+      {% if paper.year != current_year %}
+        <!-- Display the year as a subtitle -->
+        <h5>{{ paper.year }}</h5>
+        <hr>
+        {% assign current_year = paper.year %}
+      {% endif %}
+      <div class="paper">
+        <div class="row">
+          <!-- Publication Image -->
+          {% if paper.image %}
+          <div class="four columns">
+            <div class="figure">
+              <img src="{{ paper.image }}" alt="Publication Image">
+            </div>
+          </div>
+          {% endif %}
+          <!-- Publication Details -->
+          <div class="{% if paper.image %}eight{% else %}twelve{% endif %} columns">
+            <p class="title"><b>{{ paper.title }}</b></p>
+            <p>{{ paper.authors }}</p>
+            {% if paper.venue %}
+            <p><i>{{ paper.venue }}</i></p>
+            {% endif %}
+            <div class="paper-buttons">
+              {% if paper.paper_pdf %}
+              <span class="button" href="{{ paper.paper_pdf }}" target="_blank">Paper</span>
+              {% endif %}
+              {% if paper.website %}
+              <span class="button" href="{{ paper.website }}" target="_blank">Website</span>
+              {% endif %}
+              {% if paper.code %}
+              <span class="button" href="{{ paper.code }}" target="_blank">Code</span>
+              {% endif %}
+              {% if paper.poster %}
+              <span class="button" href="{{ paper.poster }}" target="_blank">Poster</span>
+              {% endif %}
+              {% if paper.video %}
+              <span class="button" href="{{ paper.video }}" target="_blank">Video</span>
+              {% endif %}
+              {% if paper.slides %}
+              <span class="button" href="{{ paper.slides }}" target="_blank">Slides</span>
+              {% endif %}
+              {% if paper.twitter %}
+              <span class="button" href="{{ paper.twitter }}" target="_blank">Twitter</span>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+
+  </div>
+</div>
+
+
+<!-- ========== Projects ========== -->
+<div class="docs-section" id="projects">
   <h4>Projects</h4>
 
-  <ul class="tab-nav">
-    <li><div class="button active" data-ref="#projects-selected">Selected</div></li>
-    <li><div class="button" data-ref="#projects-all">All</div></li>
-  </ul>
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="projects-selected">
-      {% assign selected_projects = site.data.projects.projects | where: "selected", "y" %}
-      {% for project in selected_projects %}
-        {% assign index_modulo = forloop.index0 | modulo:3 %}
-        {% if index_modulo == 0 %}
-          <div class="row">
-        {% endif %}
-
-          <div class="four columns">
-            <div class="project-container">
-
-                <div class="project-image-container">
-                  <a href="{{ project.url }}">
-                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>{{ project.title }}</b> <br/>
-                  {{ project.subtitle }}
-                </div>
-
-            </div>
+  <!-- Projects Loop -->
+  <div class="projects">
+    {% assign selected_projects = site.data.projects.projects | where: "selected", "y" %}
+    {% for project in selected_projects %}
+    <div class="paper"> <!-- Use the same class 'paper' as in Publications -->
+      <div class="row">
+        <!-- Project Image -->
+        {% if project.thumbnail %}
+        <div class="four columns">
+          <div class="figure">
+            <img src="{{ project.thumbnail }}" alt="Project Thumbnail">
           </div>
-
-        {% if index_modulo == 2 %}
-          </div>
+        </div>
         {% endif %}
-      {% endfor %}
+        <!-- Project Details -->
+        <div class="{% if project.thumbnail %}eight{% else %}twelve{% endif %} columns">
+          <p class="title"><b>{{ project.title }}</b></p>
+          {% if project.subtitle %}
+          <p>{{ project.subtitle }}</p>
+          {% endif %}
+          <div class="paper-buttons"> <!-- Use the same class 'paper-buttons' -->
+            {% if project.url %}
+            <span class="button" href="{{ project.url }}" target="_blank">Website</span>
+            {% endif %}
+            {% if project.code %}
+            <span class="button" href="{{ project.code }}" target="_blank">Code</span>
+            {% endif %}
+            {% if project.demo %}
+            <span class="button" href="{{ project.demo }}" target="_blank">Demo</span>
+            {% endif %}
+            {% if project.video %}
+            <span class="button" href="{{ project.video }}" target="_blank">Video</span>
+            {% endif %}
+            {% if project.paper %}
+            <span class="button" href="{{ project.paper }}" target="_blank">Paper</span>
+            {% endif %}
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="tab-pane" id="projects-all">
-      {% for project in site.data.projects.projects %}
-        {% assign index_modulo = forloop.index0 | modulo:3 %}
-        {% if index_modulo == 0 %}
-          <div class="row">
-        {% endif %}
-
-          <div class="four columns">
-            <div class="project-container">
-
-                <div class="project-image-container">
-                  <a href="{{ project.url }}">
-                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>{{ project.title }}</b> <br/>
-                  {{ project.subtitle }}
-                </div>
-
-            </div>
-          </div>
-
-        {% if index_modulo == 2 %}
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
+    {% endfor %}
   </div>
-
-</div> -->
+</div>
 
 <!-- ========== RESUME ========== -->
 <div class="docs-section" id="resume">
   <h4>Vitæ</h4>
 
-  <p>Full CV in <a href={{ "/assets/cv/CV.pdf" | prepend: site.baseurl }} target="_blank">PDF</a>.</p>
+  <p>Full CV in <a href={{ "/assets/cv/resume.pdf" | prepend: site.baseurl }} target="_blank">PDF</a>.</p>
 
   <!-- The Timeline -->
   <ul class="timeline">
@@ -285,5 +205,39 @@ layout: default
     {% endfor %}
   </ul>
 </div>
+
+<script>
+  // Navbar underline animation
+  document.addEventListener('DOMContentLoaded', function () {
+    const navbarLinks = document.querySelectorAll('.navbar-link');
+
+    navbarLinks.forEach(link => {
+      link.addEventListener('mouseenter', () => {
+        link.classList.add('hover');
+      });
+      link.addEventListener('mouseleave', () => {
+        link.classList.remove('hover');
+      });
+    });
+  });
+</script>
+
+<script>
+  // Add click event listeners to all elements with the class "button"
+  document.addEventListener('DOMContentLoaded', function () {
+    const buttons = document.querySelectorAll('.button');
+
+    buttons.forEach(button => {
+      // Get the "href" attribute value
+      const href = button.getAttribute('href');
+      if (href) {
+        button.addEventListener('click', () => {
+          window.open(href, '_blank'); // Open the link in a new tab
+        });
+      }
+    });
+  });
+</script>
+
 
 </div>
