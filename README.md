@@ -1,4 +1,4 @@
-# Ryan Punamiys's Website (based on Junmo Kang's template)
+# Ryan Punamiya's Website (based on Junmo Kang's template)
 
 ## Updates guide
 Change one of the files in `_data`, unless you are changing the look of the website.
