@@ -181,6 +181,129 @@ layout: default
   </div>
 </div>
 
+<!-- ========== Personal ========== -->
+<div class="docs-section" id="personal">
+  <h4>Personal</h4>
+  <p>Outside of robotics and classes you can find me:</p>
+  <ul>
+    <li>Climbing (Bouldering)</li>
+    <li>at the Gym (I love weight training to destress)</li>
+    <li>making <span class="personal-link" onclick="openModal('latte-art')">coffee and latte art</span></li>
+    <li>Reading</li>
+    <li>clicking <span class="personal-link" onclick="openModal('photos')">photos</span></li>
+  </ul>
+</div>
+
+<!-- Modal for Images -->
+<div id="modal" class="modal" style="display: none;">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div id="latte-art" class="image-panel" style="display: none;">
+      <!-- Latte art images in a 2x4 grid -->
+      <div class="image-grid">
+        <img src="/assets/personal/latte1.jpg" alt="Latte Art 1">
+        <img src="/assets/personal/latte2.jpg" alt="Latte Art 2">
+        <img src="/assets/personal/latte3.jpg" alt="Latte Art 3">
+        <img src="/assets/personal/latte4.jpg" alt="Latte Art 4">
+        <img src="/assets/personal/latte5.jpg" alt="Latte Art 5">
+        <img src="/assets/personal/latte6.jpg" alt="Latte Art 6">
+        <img src="/assets/personal/latte7.jpg" alt="Latte Art 7">
+        <img src="/assets/personal/latte8.jpg" alt="Latte Art 8">
+      </div>
+    </div>
+    <div id="photos" class="image-panel" style="display: none;">
+      <!-- Photos in a 2x4 grid -->
+      <div class="image-grid">
+        <img src="/assets/personal/photo1.jpg" alt="Photo 1">
+        <img src="/assets/personal/photo2.jpg" alt="Photo 2">
+        <img src="/assets/personal/photo3.jpg" alt="Photo 3">
+        <img src="/assets/personal/photo4.jpg" alt="Photo 4">
+        <img src="/assets/personal/photo5.jpg" alt="Photo 5">
+        <img src="/assets/personal/photo6.jpg" alt="Photo 6">
+        <img src="/assets/personal/photo7.jpg" alt="Photo 7">
+        <img src="/assets/personal/photo8.jpg" alt="Photo 8">
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  /* Modal styling */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    background: white;
+    padding: 20px;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-panel .image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px; /* Padding between images */
+    padding: 10px; /* Padding around the entire grid */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-panel img {
+    width: 100%; /* Ensure images fit within the grid cells */
+    aspect-ratio: 3 / 4; /* Maintain 4:3 aspect ratio */
+    object-fit: cover; /* Ensure images cover the grid cells without distortion */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+
+  .personal-link {
+    color: #fa8072;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+</style>
+
+
+<script>
+  // Open modal and display corresponding image panel
+  function openModal(panelId) {
+    document.getElementById('modal').style.display = 'flex';
+    document.querySelectorAll('.image-panel').forEach(panel => {
+      panel.style.display = 'none';
+    });
+    document.getElementById(panelId).style.display = 'flex';
+  }
+
+  // Close modal
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+</script>
+
+
 <!-- ========== RESUME ========== -->
 <div class="docs-section" id="resume">
   <h4>Vitæ</h4>
