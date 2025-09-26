@@ -1,4 +1,10 @@
 experiences:
+- place: "Hoffman Lab"
+  time: "Aug 2024 - Present"
+  title: "Student Researcher (Advisor: Judy Hoffman)"
+  subtitle: "Domain Adaptation for cross embodiment robot learning"
+  category: "school"
+
 - place: "RL2 Lab"
   time: "Aug 2023 - Present"
   title: "Student Researcher (Advisor: Danfei Xu)"

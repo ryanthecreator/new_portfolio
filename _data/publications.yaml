@@ -1,10 +1,26 @@
 papers:
+  - title: "EgoBridge: Domain Adaptation for Generalizable Imitation from Egocentric Human Data"
+    year: "2025"
+    authors: "<b><u>Ryan Punamiya</u></b>, Dhruv Patel, Patcharapong Aphiwetsa, Pranav Kuppili, Lawrence Y. Zhu, Simar Kareer*, Judy Hoffman*, Danfei Xu*"
+    paper_pdf: "https://arxiv.org/abs/2509.19626"
+    website: "https://ego-bridge.github.io"
+    venue: "NeurIPS 2025, CoRL 2025 H2R Workshop (Oral)"
+    image: "/assets/publications/egobridge.png"
+    selected: y
+  - title: "EMMA: Scaling Mobile Manipulation via Egocentric Human Data"
+    year: "2025"
+    authors: "Lawrence Y. Zhu, Pranav Kuppili*, <b><u>Ryan Punamiya*</u></b>, Patcharapong Aphiwetsa, Dhruv Patel, Simar Kareer, Sehoon Ha, Danfei Xu"
+    paper_pdf: "https://arxiv.org/abs/2509.04443"
+    website: "https://ego-moma.github.io"
+    venue: "Preprint"
+    image: "/assets/publications/emma.png"
+    selected: y
   - title: "EgoMimic: Scaling Imitation Learning via Egocentric Video"
     year: "2024"
-    authors: "Simar Kareer, <b><u>Ryan Punamiya</u></b>, Dhruv Patel, Pranay Mathur, Shuo Cheng, Chen Wang, Judy Hoffman, Danfei Xu"
+    authors: "Simar Kareer, <b><u>Ryan Punamiya*</u></b>, Dhruv Patel*, Pranay Mathur*, Shuo Cheng, Chen Wang, Judy Hoffman, Danfei Xu"
     paper_pdf: "https://arxiv.org/abs/2410.24221"
     website: "https://egomimic.github.io"
-    venue: "Preprint"
+    venue: "ICRA 2025"
     code: "https://github.com/SimarKareer/EgoMimic"
     image: "/assets/publications/egomimic.jpg"
     selected: y
