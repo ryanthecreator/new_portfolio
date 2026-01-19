@@ -1,4 +1,10 @@
 experiences:
+- place: "Nvidia GEAR Lab"
+  time: "Feb 2026 - Present"
+  title: "Research Intern"
+  subtitle: "Scaling robot foundation model capabilities with human experience data"
+  category: "work"
+
 - place: "Hoffman Lab"
   time: "Aug 2024 - Present"
   title: "Student Researcher (Advisor: Judy Hoffman)"
@@ -17,12 +23,6 @@ experiences:
   subtitle: "Generative models for quadruped locomotion"
   category: "school"
 
-- place: "Clyd.ai"
-  time: "Oct 2023 - Apr 2024"
-  title: "Co-founder and CTO"
-  subtitle: "AI powered dashboard for consultants"
-  category: "work"
-  
 - place: "NLP X Lab"
   time: "Jan 2023 - May 2023"
   title: "Student Assistant (Advisor: Wei Xu)"
@@ -30,7 +30,7 @@ experiences:
   category: "work"
 
 - place: "Georgia Institute of Technology"
-  time: "Aug 2022 - Present"
+  time: "Aug 2022 - Dec 2025"
   title: "B.S. in Computer Science"
   category: "school"
   
