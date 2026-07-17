@@ -107,8 +107,8 @@ a:focus-visible,
   border: 1px solid var(--line);
   border-top: 3px solid var(--accent, var(--orange));
   border-radius: 6px;
-  padding: 3.6rem 4rem 3.2rem;
-  margin-bottom: 3rem;
+  padding: 3rem 4rem 2.6rem;
+  margin-bottom: 2.4rem;
 }
 
 .accent-orange { --accent: var(--orange); --accent-deep: var(--orange-deep); }
@@ -121,7 +121,7 @@ a:focus-visible,
   text-transform: uppercase;
   letter-spacing: .18rem;
   color: var(--accent-deep, var(--orange-deep));
-  margin-bottom: 2.4rem;
+  margin-bottom: 1.6rem;
 }
 
 .docs-section h6 {
@@ -196,6 +196,51 @@ hr {
   font-size: 1.25rem;
 }
 
+/* Work roles — one entry per row, divided by a dashed rule,
+   with a legend-dash marker in the section accent color */
+.role {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.role + .role {
+  border-top: 1px dashed var(--line);
+}
+
+.role-name {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.role-name::before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 2px;
+  background: var(--accent, var(--green));
+  margin-right: 10px;
+  vertical-align: 3px;
+}
+
+.role-date {
+  font-size: 1.2rem;
+  background: var(--teal-tint);
+  color: var(--teal-deep);
+  padding: 0 .8rem;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+/* Detail lines under a role row, indented to align with the role name */
+.role-sub {
+  margin: 0 0 0 22px;
+  color: var(--ink-soft);
+  font-size: 1.25rem;
+}
+
 .figure img,
 .figure video {
   width: 100%;
@@ -252,7 +297,7 @@ hr {
   height: 2px;
   background-color: var(--orange);
   left: 50%;
-  bottom: -5px;
+  bottom: 2.4rem; /* navbar rows are 6.5rem tall; keep the line just under the text */
   transition: all 0.3s ease;
 }
 
