@@ -1,68 +1,309 @@
-/* Font Sizes */
-body {
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-  }
-  
-  h1 {
-    font-size: 2.5em;
-  }
-  
-  h5 {
-    font-size: 1.75em;
-  }
-  
-  p {
-    font-size: 1em;
-  }
-  
-  a {
-    color: #5D3FD3;
-    text-decoration: none;
-    font-weight: bold; /* Makes all links bold */
-  }
-  
-  a:hover {
-    color: white; /* Text becomes white on hover */
-    background-color: #5D3FD3; /* Purple highlight on hover */
-    padding: 2px 4px; /* Optional: Adds padding for better visibility */
-    border-radius: 4px; /* Optional: Smoothens edges of the highlight */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
-  }
+/* ============================================================
+   Design system — palette and type sampled from the EgoVerse
+   poster: cream paper, burnt orange / steel teal / sage green
+   accents, Roboto Mono throughout, numbered panel sections.
+   ============================================================ */
 
-  /* Navbar Styles */
+:root {
+  --paper:       #F7F4EF;
+  --panel:       #FFFFFF;
+  --ink:         #26262A;
+  --ink-soft:    #6A6A72;
+  --orange:      #D8683C;
+  --orange-deep: #B14E26;
+  --orange-tint: #FAF0EA;
+  --teal:        #7098A8;
+  --teal-deep:   #44707C;
+  --teal-tint:   #EDF2F3;
+  --green:       #9CCC94;
+  --green-deep:  #4E7050;
+  --navy:        #1E3358;
+  --line:        #E6DFD3;
+  --mono: 'Roboto Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+}
+
+/* Base
+   ------------------------------------------------------------ */
+html {
+  background: var(--paper);
+}
+
+body {
+  font-family: var(--mono);
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+::selection {
+  background: var(--orange);
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--mono);
+  color: var(--ink);
+}
+
+h1 {
+  font-size: 3.4rem;
+  font-weight: 700;
+  letter-spacing: -.08rem;
+}
+
+p {
+  font-size: 1em;
+}
+
+a {
+  color: var(--orange-deep);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+a:hover {
+  color: #fff;
+  background-color: var(--orange);
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a:focus-visible,
+.button:focus-visible,
+.navbar-link:focus-visible {
+  outline: 2px solid var(--orange-deep);
+  outline-offset: 2px;
+}
+
+/* Header
+   ------------------------------------------------------------ */
+.header img {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
+.main-description p {
+  font-size: 1.3rem;
+  color: var(--ink-soft);
+}
+
+.main-description .fa,
+.main-description .ai {
+  color: var(--ink);
+  transition: color 0.2s ease;
+}
+
+.main-description span:hover .fa,
+.main-description span:hover .ai {
+  color: var(--orange-deep);
+}
+
+/* Section panels — white cards with a colored top border,
+   rotating orange / teal / green like the poster sections */
+.docs-section {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--accent, var(--orange));
+  border-radius: 6px;
+  padding: 3.6rem 4rem 3.2rem;
+  margin-bottom: 3rem;
+}
+
+.accent-orange { --accent: var(--orange); --accent-deep: var(--orange-deep); }
+.accent-teal   { --accent: var(--teal);   --accent-deep: var(--teal-deep); }
+.accent-green  { --accent: var(--green);  --accent-deep: var(--green-deep); }
+
+.docs-section h4 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .18rem;
+  color: var(--accent-deep, var(--orange-deep));
+  margin-bottom: 2.4rem;
+}
+
+.docs-section h6 {
+  font-size: 1.2rem;
+  color: var(--ink-soft);
+  margin-bottom: 2rem;
+}
+
+hr {
+  margin: .8rem 0 2.4rem;
+  border: 0;
+  border-top: 1px solid var(--line);
+}
+
+/* Status callout — poster-style highlight tile */
+.callout {
+  background: var(--orange-tint);
+  border-left: 3px solid var(--orange);
+  border-radius: 0 4px 4px 0;
+  color: var(--orange-deep);
+  font-weight: 500;
+  padding: .8rem 1.4rem;
+  margin-top: 1.6rem;
+}
+
+/* News — dates as stat-tile chips */
+.news-item {
+  margin-bottom: 1.2rem;
+}
+
+.news-date {
+  display: inline-block;
+  min-width: 9ch;
+  text-align: center;
+  background: var(--teal-tint);
+  color: var(--teal-deep);
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: .05rem;
+  padding: 0 .8rem;
+  border-radius: 3px;
+  margin-right: 1rem;
+}
+
+/* Publications & projects
+   ------------------------------------------------------------ */
+.publications h5 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: .15rem;
+  color: var(--ink);
+  margin: 1.6rem 0 0;
+}
+
+.paper p {
+  font-size: 1.3rem;
+  line-height: 1.7;
+}
+
+.paper .title {
+  font-size: 1.5rem;
+}
+
+.paper p i {
+  color: var(--teal-deep);
+}
+
+.meta-right {
+  float: right;
+  color: var(--ink-soft);
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.figure img,
+.figure video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: #fff;
+}
+
+.paper-buttons .button {
+  display: inline-block;
+  height: 26px;
+  line-height: 24px;
+  padding: 0 12px;
+  margin: 0 6px 6px 0;
+  border: 1px solid var(--ink);
+  border-radius: 3px;
+  background: var(--panel);
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.paper-buttons .button:hover {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: #fff;
+}
+
+/* Navbar
+   ------------------------------------------------------------ */
+.navbar-link {
+  position: relative;
+  display: inline-block;
+  color: var(--ink);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: var(--orange-deep);
+}
+
+.navbar-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: var(--orange);
+  left: 50%;
+  bottom: -5px;
+  transition: all 0.3s ease;
+}
+
+.navbar-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+@media (min-width: 750px) {
+  .navbar,
+  .navbar-spacer {
+    background: var(--paper);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
   .navbar-link {
-    position: relative;
-    display: inline-block;
-    color: #000;
-    cursor: pointer;
-    transition: color 0.3s ease;
+    font-family: var(--mono);
+    color: var(--ink);
   }
-  
-  .navbar-link:hover {
-    color: #5D3FD3;
+  .navbar-link.active {
+    color: var(--orange-deep);
   }
-  
-  .navbar-link::after {
-    content: '';
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background-color: #5D3FD3;
-    left: 50%;
-    bottom: -5px;
-    transition: all 0.3s ease;
+}
+
+/* Timeline (Vitæ)
+   ------------------------------------------------------------ */
+.timeline .flag {
+  font-family: var(--mono);
+}
+
+/* Footer
+   ------------------------------------------------------------ */
+.footer {
+  border-top: 1px solid var(--line);
+  color: var(--ink-soft);
+  font-size: 1.2rem;
+}
+
+/* Small screens */
+@media (max-width: 549px) {
+  .docs-section {
+    padding: 2.4rem 2rem;
   }
-  
-  .navbar-link:hover::after {
-    width: 100%;
-    left: 0;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
   }
-  
-  /* Publications Images */
-  .figure img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
+}

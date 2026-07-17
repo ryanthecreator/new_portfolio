@@ -1,4 +1,13 @@
 papers:
+  - title: "EgoVerse: An Egocentric Human Dataset for Robot Learning from Around the World"
+    year: "2026"
+    authors: "<b><u>Ryan Punamiya*</u></b>, Simar Kareer*, Zeyi Liu, Josh Citron, Ri-Zhao Qiu, Xiongyi Cai, Alexey Gavryushin, Jiaqi Chen, Davide Liconti, Lawrence Y. Zhu, Patcharapong Aphiwetsa, Baoyu Li, Aniketh Cheluva, Pranav Kuppili, Yangcen Liu, Dhruv Patel, Aidan Gao, Hye-Young Chung, Ryan Co, Renee Zbizika, Jeff Jinyun Liu, Xiaomeng Xu, Haoyu Xiong, Geng Chen, Sebastiano Oliani, Chenyu Yang, Xi Wang, James Fort, Richard Newcombe, Josh Gao, Jason Chong, Garrett Matsuda, Aseem Doriwala, Marc Pollefeys, Robert Katzschmann, Xiaolong Wang, Shuran Song, Judy Hoffman, Danfei Xu"
+    paper_pdf: "https://arxiv.org/pdf/2604.07607"
+    website: "https://egoverse.ai/"
+    twitter: "https://x.com/danfei_xu/status/2036108953017368960"
+    venue: "RSS 2026"
+    video_thumbnail: "/assets/publications/egoverse.mp4"
+    selected: y
   - title: "EMMA: Scaling Mobile Manipulation via Egocentric Human Data"
     year: "2025"
     authors: "Lawrence Y. Zhu, Pranav Kuppili*, <b><u>Ryan Punamiya*</u></b>, Patcharapong Aphiwetsa, Dhruv Patel, Simar Kareer, Sehoon Ha, Danfei Xu"
